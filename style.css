@@ -195,45 +195,92 @@ body {
     margin: 1rem auto 0;
 }
 
-/* News Section */
-.news-container {
-    max-width: 900px;
+/* Updates Section */
+.updates-list {
+    max-width: 800px;
     margin: 0 auto;
 }
 
-.news-item {
-    display: flex;
-    gap: 2rem;
-    margin-bottom: 1.5rem;
-    padding: 1.2rem;
+.updates-list ul {
+    list-style: none;
+    padding: 0;
     background: #fff;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: var(--shadow);
-    transition: all 0.3s;
+    padding: 2rem;
 }
 
-.news-item:hover {
-    transform: translateX(5px);
-    box-shadow: var(--shadow-hover);
-}
-
-.news-date {
-    min-width: 100px;
-    font-weight: 600;
-    color: var(--secondary-color);
-    font-size: 0.95rem;
-}
-
-.news-content {
+.updates-list li {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border-color);
     color: var(--text-color);
     line-height: 1.6;
-    margin: 0;
+}
+
+.updates-list li:last-child {
+    border-bottom: none;
+}
+
+.updates-list li strong {
+    color: var(--secondary-color);
+    font-weight: 600;
 }
 
 /* About Section */
 .about-content {
     max-width: 900px;
     margin: 0 auto;
+}
+
+/* Education Section */
+.education-timeline {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.education-item {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    border-left: 4px solid var(--secondary-color);
+}
+
+.education-degree {
+    margin-bottom: 1.5rem;
+}
+
+.education-degree h3 {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.education-degree h4 {
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.education-year {
+    background: var(--bg-light);
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    font-weight: 500;
+}
+
+.education-details p {
+    margin-bottom: 0.8rem;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.education-details strong {
+    color: var(--text-color);
 }
 
 .about-content p {
@@ -748,12 +795,11 @@ body {
         font-size: 0.8rem;
     }
 
-    .news-item {
-        flex-direction: column;
-        gap: 0.5rem;
+    .updates-list ul {
+        padding: 1.5rem;
     }
 
-    .news-date {
-        min-width: auto;
+    .updates-list li {
+        padding: 0.75rem 0;
     }
 }
