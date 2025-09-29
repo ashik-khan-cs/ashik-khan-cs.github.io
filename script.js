@@ -63,9 +63,9 @@ window.addEventListener('scroll', () => {
     });
     
     navLinks.forEach(link => {
-        link.style.color = '';
+        link.classList.remove('active');
         if (link.getAttribute('href') === `#${current}`) {
-            link.style.color = 'var(--secondary-color)';
+            link.classList.add('active');
         }
     });
 });
@@ -90,47 +90,51 @@ const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
+            
+            // Different transforms for different elements
+            if (entry.target.classList.contains('timeline-item')) {
+                entry.target.style.transform = 'translateX(0)';
+            } else {
+                entry.target.style.transform = 'translateY(0)';
+            }
         }
     });
 }, observerOptions);
 
-// Apply animation to sections
-document.querySelectorAll('.section').forEach(section => {
-    section.style.opacity = '0';
-    section.style.transform = 'translateY(20px)';
-    section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    observer.observe(section);
-});
-
-// Apply animation to cards
-document.querySelectorAll('.research-card, .publication, .teaching-card, .timeline-item').forEach(card => {
+// Apply animation to cards and timeline items
+document.querySelectorAll('.research-card, .publication, .teaching-card, .achievement-card, .education-card').forEach(card => {
     card.style.opacity = '0';
     card.style.transform = 'translateY(20px)';
     card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     observer.observe(card);
 });
 
-// Typing effect for hero title (optional)
-const heroTitle = document.querySelector('.hero-text h1');
-if (heroTitle) {
-    const text = heroTitle.textContent;
-    heroTitle.textContent = '';
-    let index = 0;
+// Special handling for timeline items
+document.querySelectorAll('.timeline-item').forEach((item, index) => {
+    item.style.opacity = '0';
+    item.style.transform = 'translateX(-30px)';
+    item.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
     
-    function typeWriter() {
-        if (index < text.length) {
-            heroTitle.textContent += text.charAt(index);
-            index++;
-            setTimeout(typeWriter, 50);
-        }
-    }
-    
-    // Start typing after page loads
-    window.addEventListener('load', () => {
-        setTimeout(typeWriter, 500);
+    // Add staggered delay for timeline items
+    setTimeout(() => {
+        observer.observe(item);
+    }, index * 100);
+});
+
+// Simple fade-in for hero elements
+window.addEventListener('load', () => {
+    const heroElements = document.querySelectorAll('.hero-text h1, .hero-text h2, .hero-text p, .hero-image');
+    heroElements.forEach((element, index) => {
+        element.style.opacity = '0';
+        element.style.transform = 'translateY(20px)';
+        element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        
+        setTimeout(() => {
+            element.style.opacity = '1';
+            element.style.transform = 'translateY(0)';
+        }, index * 150);
     });
-}
+});
 
 // Add hover effect to social links
 document.querySelectorAll('.social-links a').forEach(link => {
