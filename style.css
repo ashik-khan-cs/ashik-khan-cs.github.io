@@ -233,54 +233,126 @@ body {
 }
 
 /* Education Section */
-.education-timeline {
-    max-width: 900px;
+.education-container {
+    max-width: 1000px;
     margin: 0 auto;
+    display: grid;
+    gap: 2rem;
 }
 
-.education-item {
-    margin-bottom: 3rem;
-    padding: 2rem;
+.education-card {
     background: #fff;
-    border-radius: 10px;
+    border-radius: 12px;
     box-shadow: var(--shadow);
-    border-left: 4px solid var(--secondary-color);
+    overflow: hidden;
+    transition: all 0.3s;
+    border: 1px solid var(--border-color);
 }
 
-.education-degree {
-    margin-bottom: 1.5rem;
+.education-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
 }
 
-.education-degree h3 {
-    font-size: 1.3rem;
+.education-header {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.education-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.5rem;
+    flex-shrink: 0;
+}
+
+.education-icon i {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.education-info h3 {
+    font-size: 1.4rem;
     color: var(--primary-color);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3rem;
+    font-weight: 700;
 }
 
-.education-degree h4 {
+.education-info h4 {
     font-size: 1.1rem;
     color: var(--secondary-color);
     margin-bottom: 0.5rem;
     font-weight: 600;
 }
 
-.education-year {
-    background: var(--bg-light);
-    padding: 0.3rem 0.8rem;
-    border-radius: 15px;
-    font-size: 0.9rem;
+.institution {
     color: var(--text-light);
-    font-weight: 500;
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
 }
 
-.education-details p {
+.year-badge {
+    background: var(--secondary-color);
+    color: #fff;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.education-content {
+    padding: 2rem;
+}
+
+.thesis-info {
+    margin-bottom: 2rem;
+}
+
+.thesis-info h5, .coursework h5 {
+    font-size: 1rem;
+    color: var(--primary-color);
     margin-bottom: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.thesis-info p {
     color: var(--text-light);
     line-height: 1.6;
+    margin-bottom: 0.5rem;
 }
 
-.education-details strong {
+.course-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.course-tag {
+    background: var(--bg-light);
     color: var(--text-color);
+    padding: 0.4rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s;
+}
+
+.course-tag:hover {
+    background: var(--secondary-color);
+    color: #fff;
+    transform: translateY(-2px);
 }
 
 .about-content p {
