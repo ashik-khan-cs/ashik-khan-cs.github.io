@@ -1282,36 +1282,47 @@ body {
     .contact-info {
         gap: 1rem;
         flex-direction: column;
+        justify-content: flex-start;
     }
 
     .contact-item {
         min-width: 100%;
-        padding: 1.25rem;
+        max-width: 100%;
+        width: 100%;
+        padding: 1.5rem;
         text-align: left;
-        flex-direction: row;
-        gap: 1rem;
+        flex-direction: column;
+        gap: 0.75rem;
+        align-items: flex-start;
     }
 
     .contact-item i {
-        font-size: 1.2rem;
-        width: 32px;
-        height: 32px;
+        font-size: 1.5rem;
+        width: 48px;
+        height: 48px;
         display: flex;
         align-items: center;
         justify-content: center;
         background: var(--bg-light);
-        border-radius: 8px;
+        border-radius: 12px;
         flex-shrink: 0;
+        margin-bottom: 0.5rem;
     }
 
     .contact-item h3 {
-        font-size: 0.85rem;
-        margin-bottom: 0.25rem;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
     }
 
     .contact-item p {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         margin: 0;
+        line-height: 1.6;
+    }
+
+    .contact-item p + p {
+        margin-top: 0.25rem;
     }
 
     .updates-list li {
