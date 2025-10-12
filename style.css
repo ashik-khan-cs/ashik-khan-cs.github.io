@@ -1326,8 +1326,8 @@ body {
     }
 
     .updates-list li {
-        padding: 1.25rem;
-        padding-left: 2.5rem;
+        padding: 1rem;
+        padding-left: 2.25rem;
         margin-bottom: 0.75rem;
         font-size: 0.9rem;
         line-height: 1.7;
@@ -1335,16 +1335,15 @@ body {
     }
 
     .updates-list li::before {
-        left: 1rem;
-        font-size: 1.1rem;
-        top: 1.25rem;
+        left: 0.75rem;
+        top: 1rem;
+        font-size: 1rem;
     }
 
     .updates-list li strong {
-        display: inline;
-        margin-bottom: 0;
-        margin-right: 0.5rem;
-        font-size: 0.875rem;
+        display: block;
+        margin-bottom: 0.25rem;
+        font-size: 0.85rem;
     }
 
     .updates-list li:hover {
