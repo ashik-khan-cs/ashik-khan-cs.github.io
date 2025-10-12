@@ -1326,8 +1326,8 @@ body {
     }
 
     .updates-list li {
-        padding: 1rem 1rem;
-        padding-left: 2.5rem;
+        padding: 1rem;
+        padding-left: 1rem;
         margin-bottom: 0.75rem;
         font-size: 0.9rem;
         line-height: 1.6;
@@ -1335,9 +1335,7 @@ body {
     }
 
     .updates-list li::before {
-        left: 0.875rem;
-        font-size: 1rem;
-        line-height: 1.6;
+        display: none;
     }
 
     .updates-list li strong {
@@ -1346,7 +1344,7 @@ body {
     }
 
     .updates-list li:hover {
-        transform: translateX(2px);
+        transform: translateY(-2px);
     }
     
     .education-card {
