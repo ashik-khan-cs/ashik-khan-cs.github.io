@@ -1326,23 +1326,23 @@ body {
     }
 
     .updates-list li {
-        padding: 1rem;
-        padding-left: 2.25rem;
+        padding: 1.25rem 1rem;
+        padding-left: 2.5rem;
         margin-bottom: 0.75rem;
         font-size: 0.9rem;
-        line-height: 1.7;
+        line-height: 1.6;
         border-radius: 8px;
     }
 
     .updates-list li::before {
-        left: 0.75rem;
-        top: 1rem;
+        left: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
         font-size: 1rem;
     }
 
     .updates-list li strong {
-        display: block;
-        margin-bottom: 0.25rem;
+        display: inline;
         font-size: 0.85rem;
     }
 
