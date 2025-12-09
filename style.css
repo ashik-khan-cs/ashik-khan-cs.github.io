@@ -398,6 +398,20 @@ body {
     font-weight: 600;
 }
 
+/* Announcement highlight */
+.updates-list li.announcement {
+    border-left: 4px solid var(--secondary-color);
+    background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+}
+
+.updates-list li.announcement::before {
+    content: '\f0a1'; /* a different marker using Font Awesome */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    left: 0.8rem;
+    color: var(--accent-color);
+}
+
 .updates-list li:last-child {
     margin-bottom: 0;
 }
