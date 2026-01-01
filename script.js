@@ -1,3 +1,84 @@
+// Load Publications from JSON
+async function loadPublications() {
+    try {
+        // Add cache-busting parameter to always fetch fresh data
+        const cacheBuster = new Date().getTime();
+        const response = await fetch(`publications.json?v=${cacheBuster}`);
+        if (!response.ok) throw new Error('Failed to load publications');
+
+        const data = await response.json();
+        renderPublications(data);
+    } catch (error) {
+        console.warn('Could not load publications.json:', error);
+        console.log('Using static publications from HTML');
+    }
+}
+
+function renderPublications(data) {
+    const publicationsList = document.querySelector('.publications-list');
+    if (!publicationsList) return;
+
+    // Remove loading indicator
+    const loadingIndicator = document.querySelector('#publications .section-title + p');
+    if (loadingIndicator && loadingIndicator.textContent.includes('Loading')) {
+        loadingIndicator.remove();
+    }
+
+    // Clear existing publications
+    publicationsList.innerHTML = '';
+
+    // Render each publication
+    data.publications.forEach(pub => {
+        const pubHTML = `
+            <div class="publication">
+                <div class="pub-number">${pub.number}</div>
+                <div class="pub-content">
+                    <h3>${pub.title}</h3>
+                    <p class="pub-authors"><strong>${pub.authors.split(',')[0].trim()}</strong>${pub.authors.includes(',') ? ',' + pub.authors.split(',').slice(1).join(',') : ''}</p>
+                    <p class="pub-venue">${pub.venue}${pub.year ? ` (${pub.year})` : ''}</p>
+                    ${pub.citations > 0 ? `<p class="pub-stats"><i class="fas fa-quote-right"></i> Cited by ${pub.citations}</p>` : ''}
+                    ${pub.abstract ? `<p class="pub-abstract">${pub.abstract}</p>` : ''}
+                    <div style="display: flex; gap: 1rem; margin-top: 0.5rem;">
+                        ${pub.pub_url ? `<a href="${pub.pub_url}" class="pub-link" target="_blank"><i class="fas fa-external-link-alt"></i> View Paper</a>` : ''}
+                        ${pub.scholar_url ? `<a href="${pub.scholar_url}" class="pub-link" target="_blank" style="background: #4285f4;"><i class="fas fa-graduation-cap"></i> Scholar</a>` : ''}
+                    </div>
+                </div>
+            </div>
+        `;
+        publicationsList.insertAdjacentHTML('beforeend', pubHTML);
+    });
+
+    // Re-apply animations to new publications
+    document.querySelectorAll('.publication').forEach(pub => {
+        pub.style.opacity = '0';
+        pub.style.transform = 'translateY(20px)';
+        pub.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(pub);
+    });
+
+    // Add last updated timestamp
+    const container = publicationsList.closest('.container');
+    let lastUpdated = document.querySelector('.publications-last-updated');
+
+    if (lastUpdated) {
+        lastUpdated.remove();
+    }
+
+    if (data.lastUpdated) {
+        const timestamp = document.createElement('p');
+        timestamp.className = 'publications-last-updated';
+        timestamp.style.cssText = 'text-align: center; color: #999; font-size: 0.85rem; margin-top: 1rem;';
+        timestamp.innerHTML = `<i class="fas fa-sync-alt"></i> Last updated from Google Scholar: ${new Date(data.lastUpdated).toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'short',
+            day: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit'
+        })}`;
+        container.appendChild(timestamp);
+    }
+}
+
 // Mobile Navigation Toggle
 const navToggle = document.getElementById('navToggle');
 const navMenu = document.getElementById('navMenu');
@@ -123,6 +204,9 @@ document.querySelectorAll('.timeline-item').forEach((item, index) => {
 
 // Simple fade-in for hero elements
 window.addEventListener('load', () => {
+    // Load publications from JSON
+    loadPublications();
+    
     const heroElements = document.querySelectorAll('.hero-text h1, .hero-text h2, .hero-text p, .hero-image');
     heroElements.forEach((element, index) => {
         element.style.opacity = '0';
