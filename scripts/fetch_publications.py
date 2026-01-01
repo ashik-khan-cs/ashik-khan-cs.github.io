@@ -33,27 +33,37 @@ def install_if_missing():
 def fetch_publications(scholar_id: str, max_retries: int = 3) -> List[Dict[str, Any]]:
     """
     Fetch publications from Google Scholar profile.
-    
+
     Args:
         scholar_id: Google Scholar user ID (e.g., 'EKQLSHQAAAAJ')
         max_retries: Number of retry attempts for network errors
-        
+
     Returns:
         List of publication dictionaries
     """
     try:
-        from scholarly import scholarly
+        from scholarly import scholarly, ProxyGenerator
     except ImportError:
         logger.error("scholarly package not found. Installing...")
         install_if_missing()
-        from scholarly import scholarly
-    
+        from scholarly import scholarly, ProxyGenerator
+
+    # Set up proxy to avoid 403 errors
+    try:
+        pg = ProxyGenerator()
+        success = pg.FreeProxies()
+        if success:
+            scholarly.use_proxy(pg)
+            logger.info("Using free proxy to avoid rate limiting")
+    except Exception as e:
+        logger.warning(f"Could not set up proxy: {e}. Proceeding without proxy...")
+
     publications = []
-    
+
     for attempt in range(max_retries):
         try:
             logger.info(f"Fetching publications (attempt {attempt + 1}/{max_retries})...")
-            
+
             # Fetch author profile
             author = scholarly.search_author_id(scholar_id)
             scholarly.fill(author, sections=['publications', 'basic'])
