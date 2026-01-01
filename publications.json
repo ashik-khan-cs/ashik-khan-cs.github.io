@@ -1,38 +1,38 @@
 {
-  "lastUpdated": "2026-01-01 00:00:00",
+  "lastUpdated": "2026-01-01 13:05:42",
   "publications": [
     {
       "number": 1,
       "title": "Comparative Analysis of Resource-Efficient CNN Architectures for Brain Tumor Classification",
-      "authors": "Md Ashik Khan, Rafath Bin Zafar Auvee",
-      "venue": "2024 27th International Conference on Computer and Information Technology (ICCIT), Cox's Bazar, Bangladesh, pp. 639-644",
+      "authors": "Md Ashik Khan and Rafath Bin Zafar Auvee",
+      "venue": "2024 27th International Conference on Computer and Information Technology (ICCIT), Cox's Bazar, Bangladesh",
       "year": "2024",
-      "citations": 18,
-      "abstract": "Accurate brain tumor classification in MRI images is essential for timely diagnosis and effective treatment planning. Despite its lower complexity, our custom CNN architecture achieved 98.67% accuracy on the Br35H dataset and 99.62% on the Brain Tumor MRI Dataset, showing competitive performance against pre-trained ResNet18 and VGG16 models.",
-      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=EKQLSHQAAAAJ&citation_for_view=EKQLSHQAAAAJ:u-x6o8ySG0sC",
-      "pub_url": "https://ieeexplore.ieee.org/abstract/document/11021970"
+      "citations": 21,
+      "abstract": "Accurate brain tumor classification in MRI images is essential for timely diagnosis and effective treatment planning. While deep learning models such as ResNet18 and VGG16 have demonstrated high accuracy, they often come with increased complexity and computational demands. This study presents a comparative analysis of a simple yet effective Convolutional Neural Network (CNN) architecture against pre-trained ResNet18 and VGG16 models for brain tumor classification using two publicly available datasets: Br35H:: Brain Tumor Detection 2020 and Brain Tumor MRI Dataset. Despite its lower complexity, the custom CNN architecture shows competitive performance compared to the pre-trained models. In binary classification tasks, the custom CNN achieved an accuracy of 98.67% on the Br35H dataset and 99.62% on the Brain Tumor MRI Dataset. For multi-class classification, the custom CNN, with slight …",
+      "scholar_url": "",
+      "pub_url": "https://ieeexplore.ieee.org/abstract/document/11021970/"
     },
     {
       "number": 2,
-      "title": "Fixed-Threshold Evaluation of a Hybrid CNN–ViT for AI-Generated Image Detection Across Photos and Art",
-      "authors": "Md Ashik Khan, Arafat Alam Jion",
-      "venue": "Accepted at 2025 28th International Conference on Computer and Information Technology (ICCIT), Cox's Bazar, Bangladesh",
+      "title": "Fixed-Budget Parameter-Efficient Training with Frozen Encoders Improves Multimodal Chest X-Ray Classification",
+      "authors": "Md Ashik Khan and Md Nahid Siddique",
+      "venue": "Accepted at 2025 28th International Conference on Computer and Information Technology (ICCIT)",
       "year": "2025",
       "citations": 0,
-      "abstract": "AI image generators create both photorealistic images and stylized art, necessitating robust detectors that maintain performance under common post-processing transformations (JPEG compression, blur, downscaling). Existing methods optimise single metrics without addressing deployment-critical factors such as operating point selection and fixed-threshold robustness. This work addresses misleading robustness estimates by introducing a fixed-threshold evaluation protocol that holds decision thresholds, selected once on clean validation data, fixed across all post-processing transformations. Traditional methods retune thresholds per condition, artificially inflating robustness estimates and masking deployment failures.",
+      "abstract": "Multimodal chest X-Ray analysis often fine-tunes large vision-language models, which is computationally costly. We study parameter-efficient training (PET) strategies, including frozen encoders, BitFit, LoRA, and adapters for multi-label classification on the Indiana University Chest X-Ray dataset (3,851 image-report pairs; 579 test samples). To mitigate data leakage, we redact pathology terms from reports used as text inputs while retaining clinical context. Under a fixed parameter budget (2.37M parameters, 2.51% of total), all PET variants achieve AUROC between 0.892 and 0.908, outperforming full fine-tuning (0.770 AUROC), which uses 94.3M trainable parameters, a 40x reduction. External validation on CheXpert (224,316 images, 58x larger) confirms scalability: all PET methods achieve >0.69 AUROC with <9% trainable parameters, with Adapter achieving best performance (0.7214 AUROC). Budget-matched comparisons reveal that vision-only models (0.653 AUROC, 1.06M parameters) outperform budget-matched multimodal models (0.641 AUROC, 1.06M parameters), indicating improvements arise primarily from parameter allocation rather than cross-modal synergy. While PET methods show degraded calibration (ECE: 0.29-0.34) compared to simpler models (ECE: 0.049), this represents a tractable limitation addressable through post-hoc calibration methods. These findings demonstrate that frozen encoder strategies provide superior discrimination at substantially reduced computational cost, though calibration correction is essential for clinical deployment.",
       "scholar_url": "",
-      "pub_url": ""
+      "pub_url": "https://arxiv.org/abs/2512.21508"
     },
     {
       "number": 3,
-      "title": "Fixed-Budget Parameter-Efficient Training with Frozen Encoders Improves Multimodal Chest X-Ray Classification",
-      "authors": "Md Ashik Khan, Md Nahid Siddique",
-      "venue": "Accepted at 2025 28th International Conference on Computer and Information Technology (ICCIT), Cox's Bazar, Bangladesh",
+      "title": "Fixed-Threshold Evaluation of a Hybrid CNN-ViT for AI-Generated Image Detection Across Photos and Art",
+      "authors": "Md Ashik Khan and Arafat Alam Jion",
+      "venue": "Accepted at 2025 28th International Conference on Computer and Information Technology (ICCIT)",
       "year": "2025",
       "citations": 0,
-      "abstract": "Multimodal chest X-Ray analysis often fine-tunes large vision-language models, which is computationally costly. We study parameter-efficient training (PET) strategies, including frozen encoders, BitFit, LoRA, and adapters for multi-label classification on the Indiana University Chest X-Ray dataset (3,851 image-report pairs; 579 test samples). To mitigate data leakage, we redact pathology terms from reports used as text inputs while retaining clinical context. Under a fixed parameter budget (2.37M parameters, 2.51% of total), all PET variants achieve AUROC between 0.892 and 0.908, outperforming full fine-tuning (0.770 AUROC), which uses 94.3M trainable parameters, a 40× reduction.",
+      "abstract": "AI image generators create both photorealistic images and stylized art, necessitating robust detectors that maintain performance under common post-processing transformations (JPEG compression, blur, downscaling). Existing methods optimize single metrics without addressing deployment-critical factors such as operating point selection and fixed-threshold robustness. This work addresses misleading robustness estimates by introducing a fixed-threshold evaluation protocol that holds decision thresholds, selected once on clean validation data, fixed across all post-processing transformations. Traditional methods retune thresholds per condition, artificially inflating robustness estimates and masking deployment failures. We report deployment-relevant performance at three operating points (Low-FPR, ROC-optimal, Best-F1) under systematic degradation testing using a lightweight CNN-ViT hybrid with gated fusion and optional frequency enhancement. Our evaluation exposes a statistically validated forensic-semantic spectrum: frequency-aided CNNs excel on pristine photos but collapse under compression (93.33% to 61.49%), whereas ViTs degrade minimally (92.86% to 88.36%) through robust semantic pattern recognition. Multi-seed experiments demonstrate that all architectures achieve 15% higher AUROC on artistic content (0.901-0.907) versus photorealistic images (0.747-0.759), confirming that semantic patterns provide fundamentally more reliable detection cues than forensic artifacts. Our hybrid approach achieves balanced cross-domain performance: 91.4% accuracy on tiny-genimage photos, 89.7% on AiArtData art/graphics, and 98.3 …",
       "scholar_url": "",
-      "pub_url": ""
+      "pub_url": "https://arxiv.org/abs/2512.21512"
     }
   ]
 }

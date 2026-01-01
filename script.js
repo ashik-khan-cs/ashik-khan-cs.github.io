@@ -35,9 +35,9 @@ function renderPublications(data) {
                 <div class="pub-content">
                     <h3>${pub.title}</h3>
                     <p class="pub-authors"><strong>${pub.authors.split(',')[0].trim()}</strong>${pub.authors.includes(',') ? ',' + pub.authors.split(',').slice(1).join(',') : ''}</p>
-                    <p class="pub-venue">${pub.venue}${pub.year ? ` (${pub.year})` : ''}</p>
+                    <p class="pub-venue">${pub.venue ? pub.venue : ''}</p>
                     ${pub.citations > 0 ? `<p class="pub-stats"><i class="fas fa-quote-right"></i> Cited by ${pub.citations}</p>` : ''}
-                    ${pub.abstract ? `<p class="pub-abstract">${pub.abstract}</p>` : ''}
+                    ${pub.abstract ? `<p class="pub-abstract">${pub.abstract.substring(0, 500)}${pub.abstract.length > 500 ? '...' : ''}</p>` : ''}
                     <div style="display: flex; gap: 1rem; margin-top: 0.5rem;">
                         ${pub.pub_url ? `<a href="${pub.pub_url}" class="pub-link" target="_blank"><i class="fas fa-external-link-alt"></i> View Paper</a>` : ''}
                         ${pub.scholar_url ? `<a href="${pub.scholar_url}" class="pub-link" target="_blank" style="background: #4285f4;"><i class="fas fa-graduation-cap"></i> Scholar</a>` : ''}
