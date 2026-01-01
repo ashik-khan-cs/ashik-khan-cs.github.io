@@ -1,11 +1,12 @@
 name: Update Publications from Google Scholar
 
 on:
-  schedule:
-    # Run every day at 2 AM UTC
-    - cron: '0 2 * * *'
+  # Automated daily updates disabled - Google Scholar blocks automated scraping
+  # Uncomment the schedule below if Scholar access is restored
+  # schedule:
+  #   - cron: '0 2 * * *'
 
-  # Allow manual trigger from Actions tab
+  # Manual trigger only
   workflow_dispatch:
 
 jobs:
