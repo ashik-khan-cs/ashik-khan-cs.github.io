@@ -1,538 +1,563 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Md Ashik Khan</title>
-    <link rel="stylesheet" href="style.css?v=5.0">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Md Ashik Khan</title>
+  <meta name="author" content="Md Ashik Khan" />
+  <meta name="description" content="Md Ashik Khan — M.Tech CSE, IIT Kharagpur. Research in efficient deep learning, computer vision, medical imaging." />
+  <link rel="stylesheet" href="style.css?v=7.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#home" class="nav-brand">Md Ashik Khan</a>
-            <button class="nav-toggle" id="navToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#news">News</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#teaching">Teaching</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#contact">Contact</a></li>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Nav -->
+  <nav class="navbar" role="banner">
+    <div class="nav-container">
+      <a href="#home" class="nav-brand">Md Ashik Khan</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main" class="container" role="main">
+
+    <!-- Hero -->
+    <section id="home" class="hero" aria-labelledby="hero-title">
+      <div class="hero-text">
+        <h1 id="hero-title" data-typing="Md Ashik Khan">Md Ashik Khan</h1>
+        <p class="hero-tagline">Computer Vision · Medical Imaging · Video Action Recognition</p>
+        <p class="lead">Senior Software Engineer, Auptimate &nbsp;·&nbsp; M.Tech CSE, IIT Kharagpur</p>
+
+        <div class="social-links" role="group" aria-label="Quick links">
+
+          <a class="btn primary email" href="mailto:aasshhik98@gmail.com">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/>
+              </svg>
+            </span>Email
+          </a>
+
+          <a class="btn scholar" href="https://scholar.google.com/citations?user=EKQLSHQAAAAJ&hl=en" target="_blank" rel="noopener">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10 12 5 2 10l10 5 10-5Z"/>
+                <path d="M6 12v4.5c0 1.6 3.6 2.8 6 2.8s6-1.2 6-2.8V12"/>
+              </svg>
+            </span>Scholar
+          </a>
+
+          <a class="btn" href="Md_Ashik_Khan_Resume.pdf" target="_blank" rel="noopener">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H7a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8Z"/>
+                <path d="M14 2v6h6"/>
+              </svg>
+            </span>Resume
+          </a>
+
+          <a class="btn linkedin" href="https://www.linkedin.com/in/iamashik/" target="_blank" rel="noopener me">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="4.5" fill="currentColor"/>
+                <path fill="#fff" d="M7.2 9.6H9.6V18H7.2zM8.4 6.4a1.4 1.4 0 1 1 0-2.8 1.4 1.4 0 0 1 0 2.8zM10.8 9.6h2.3v1.2h.03c.32-.6 1.16-1.32 2.48-1.32 2.65 0 3.14 1.74 3.14 4v4.5h-2.4v-4c0-1-.02-2.28-1.39-2.28-1.39 0-1.6 1.06-1.6 2.2V18h-2.56z"/>
+              </svg>
+            </span>LinkedIn
+          </a>
+
+          <a class="btn github" href="https://github.com/Anashikforu" target="_blank" rel="noopener me">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M12 2C6.477 2 2 6.484 2 12.027c0 4.43 2.865 8.186 6.839 9.504.5.093.682-.218.682-.486 0-.24-.009-.876-.014-1.72-2.782.607-3.369-1.358-3.369-1.358-.455-1.158-1.11-1.468-1.11-1.468-.908-.625.069-.612.069-.612 1.004.072 1.532 1.044 1.532 1.044.893 1.561 2.343 1.11 2.914.849.091-.654.35-1.11.636-1.366-2.22-.254-4.555-1.134-4.555-5.046 0-1.115.39-2.027 1.03-2.742-.103-.254-.447-1.277.098-2.663 0 0 .84-.27 2.75 1.048a9.41 9.41 0 0 1 5 0c1.909-1.318 2.748-1.048 2.748-1.048.546 1.386.202 2.409.1 2.663.64.715 1.029 1.627 1.029 2.742 0 3.922-2.338 4.79-4.565 5.038.359.312.679.927.679 1.868 0 1.349-.012 2.439-.012 2.773 0 .27.18.584.688.485A10.03 10.03 0 0 0 22 12.027C22 6.484 17.523 2 12 2z"/>
+              </svg>
+            </span>GitHub
+          </a>
+
+          <a class="btn leetcode" href="https://leetcode.com/aasshhik98/" target="_blank" rel="noopener">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/>
+              </svg>
+            </span>LeetCode
+          </a>
+
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="4E30DDE8-305D-4A6A-BA34-3A89D0BEEB4C.jpg" alt="Portrait of Md Ashik Khan" width="320" height="320" loading="eager" decoding="async" />
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section" aria-labelledby="about-title">
+      <h2 class="section-title" id="about-title">About</h2>
+      <div class="about-content">
+        <p class="about-intro">
+          I am a Senior Software Engineer at Auptimate, where I develop AI-driven systems for document processing and e-signature platforms. I completed my M.Tech. in Computer Science and Engineering from IIT Kharagpur in 2023, where I worked as a Research Assistant at the Computer Vision and Intelligence Research (CVIR) Lab under <a href="https://cse.iitkgp.ac.in/~adas/">Dr. Abir Das</a>.
+        </p>
+        <p>
+          My research focuses on efficient deep learning for computer vision, particularly video action recognition and medical imaging. I conducted a large-scale study on representation learning and benchmarking in video action recognition, evaluating transfer learning across 14 datasets using SlowOnly, TimeSformer, and SIFAR.
+        </p>
+        <p>
+          I am also interested in resource-efficient models and robust forensic methods. My published work spans brain-tumor classification, multimodal chest X-ray analysis, and AI-generated image detection.
+        </p>
+        <div class="interests">
+          <h3>Research Interests</h3>
+          <div class="interest-tags">
+            <span class="tag primary-tag">Computer Vision</span>
+            <span class="tag primary-tag">Medical Imaging</span>
+            <span class="tag primary-tag">Video Action Recognition</span>
+            <span class="tag">Multimodal Learning</span>
+            <span class="tag">Efficient ML</span>
+            <span class="tag">Trustworthy AI</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- News -->
+    <section id="news" class="section" aria-labelledby="news-title">
+      <h2 class="section-title" id="news-title">News</h2>
+      <div class="updates-list">
+        <ul aria-label="Recent updates">
+          <li>
+            <time datetime="2026-03">Mar 2026</time>
+            <div>Served as a reviewer for <strong>IEEE Access</strong>.</div>
+          </li>
+          <li>
+            <time datetime="2026-02">Feb 2026</time>
+            <div>Served as a reviewer for <strong>IEEE Access</strong>.</div>
+          </li>
+          <li>
+            <time datetime="2026-01">Jan 2026</time>
+            <div>Promoted to <strong>Senior Software Engineer</strong> at Auptimate.</div>
+          </li>
+          <li>
+            <time datetime="2025-12">Dec 2025</time>
+            <div>Paper <em>"Fixed-Threshold Evaluation Reveals the Forensic-Semantic Spectrum in AI-Generated Image Detection"</em> accepted at IEEE 28th ICCIT 2025.</div>
+          </li>
+          <li>
+            <time datetime="2025-12">Dec 2025</time>
+            <div>Paper <em>"Fixed-Budget Parameter-Efficient Training with Frozen Encoders Improves Multimodal Chest X-Ray Classification"</em> accepted at IEEE 28th ICCIT 2025.</div>
+          </li>
+          <li>
+            <time datetime="2025-11">Nov 2025</time>
+            <div>Served as a reviewer for International Conference on Intelligent Data Analysis and Applications (IDAA 2025).</div>
+          </li>
+          <li>
+            <time datetime="2024-12">Dec 2024</time>
+            <div>Paper <em>"Comparative Analysis of Resource-Efficient CNN Architectures for Brain Tumor Classification"</em> published at ICCIT 2024.</div>
+          </li>
+          <li>
+            <time datetime="2023-05">May 2023</time>
+            <div>Joined <strong>Auptimate</strong> as Software Engineer.</div>
+          </li>
+          <li>
+            <time datetime="2023-05">May 2023</time>
+            <div>Completed Master of Technology in Computer Science and Engineering, IIT Kharagpur.</div>
+          </li>
+          <li>
+            <time datetime="2022-06">Jun 2022</time>
+            <div>Started as Research Assistant at CVIR Lab, IIT Kharagpur.</div>
+          </li>
+          <li>
+            <time datetime="2021-07">Jul 2021</time>
+            <div>Awarded <strong>ICCR Scholarship</strong> under the Bangladesh Scholarship Scheme for M.Tech at IIT Kharagpur.</div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Publications -->
+    <section id="publications" aria-labelledby="pubs-title">
+      <h2 class="section-title" id="pubs-title">Publications</h2>
+      <div class="publications-list">
+
+        <article class="publication" aria-label="Brain Tumor Classification">
+          <div class="pub-thumb-wrap">
+            <div class="pub-thumb-placeholder">Brain Tumor<br/>Classification<br/>ICCIT 2024</div>
+          </div>
+          <div class="pub-content">
+            <h3><a href="https://ieeexplore.ieee.org/abstract/document/11021970" target="_blank" rel="noopener">Comparative Analysis of Resource-Efficient CNN Architectures for Brain Tumor Classification</a></h3>
+            <p class="pub-authors"><strong>Md Ashik Khan</strong>, Rafath Bin Zafar Auvee</p>
+            <p class="pub-venue">2024 27th International Conference on Computer and Information Technology (ICCIT), Cox's Bazar, Bangladesh, pp. 639–644</p>
+            <p class="pub-stats"><i class="fas fa-quote-right" aria-hidden="true"></i> Cited by 31</p>
+            <p class="pub-abstract">Accurate brain tumor classification in MRI images is essential for timely diagnosis. Our custom CNN achieved 98.67% accuracy on the Br35H dataset and 99.62% on the Brain Tumor MRI Dataset, showing competitive performance against pre-trained ResNet18 and VGG16 models at lower complexity.</p>
+            <div class="pub-links">
+              <a class="pub-link" href="https://ieeexplore.ieee.org/abstract/document/11021970" target="_blank" rel="noopener">Paper</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="publication" aria-label="AI-Generated Image Detection">
+          <div class="pub-thumb-wrap">
+            <div class="pub-thumb-placeholder">AI-Generated<br/>Image Detection<br/>ICCIT 2025</div>
+          </div>
+          <div class="pub-content">
+            <h3>Fixed-Threshold Evaluation of a Hybrid CNN–ViT for AI-Generated Image Detection Across Photos and Art</h3>
+            <p class="pub-authors"><strong>Md Ashik Khan</strong>, Arafat Alam Jion</p>
+            <p class="pub-venue">Accepted at 2025 28th International Conference on Computer and Information Technology (ICCIT), Cox's Bazar, Bangladesh</p>
+            <p class="pub-abstract">We introduce a fixed-threshold evaluation protocol that holds decision thresholds fixed across all post-processing transformations (JPEG compression, blur, downscaling), addressing misleading robustness estimates from methods that retune thresholds per condition.</p>
+            <div class="pub-links">
+              <a class="pub-link" href="#" target="_blank" rel="noopener">Paper</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="publication" aria-label="Chest X-Ray Classification">
+          <div class="pub-thumb-wrap">
+            <div class="pub-thumb-placeholder">Multimodal<br/>Chest X-Ray<br/>ICCIT 2025</div>
+          </div>
+          <div class="pub-content">
+            <h3>Fixed-Budget Parameter-Efficient Training with Frozen Encoders Improves Multimodal Chest X-Ray Classification</h3>
+            <p class="pub-authors"><strong>Md Ashik Khan</strong>, Md Nahid Siddique</p>
+            <p class="pub-venue">Accepted at 2025 28th International Conference on Computer and Information Technology (ICCIT), Cox's Bazar, Bangladesh</p>
+            <p class="pub-abstract">Under a fixed parameter budget (2.37M, 2.51% of total), PET variants (BitFit, LoRA, adapters) achieve AUROC 0.892–0.908, outperforming full fine-tuning (0.770 AUROC) which uses 94.3M trainable parameters — a 40× reduction.</p>
+            <div class="pub-links">
+              <a class="pub-link" href="#" target="_blank" rel="noopener">Paper</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Research Projects -->
+    <section id="research" class="section" aria-labelledby="research-title">
+      <h2 class="section-title" id="research-title">Research</h2>
+      <p style="font-size:14px; color:var(--muted); margin-bottom:12px;">
+        My research focuses on efficient deep learning for computer vision, particularly in video action recognition and medical imaging.
+        I am interested in developing resource-efficient models, robust forensic methods, and multimodal understanding systems.
+      </p>
+      <div class="research-grid">
+
+        <div class="research-card">
+          <div class="research-header">
+            <h3>A Large-scale Study of Representation Learning and Benchmarking in Video Action Recognition</h3>
+            <span class="research-date">Jul 2022 – Apr 2023</span>
+          </div>
+          <p class="research-role">IIT Kharagpur · Supervised by Dr. Abir Das</p>
+          <ul class="research-highlights">
+            <li>Comprehensive analysis of 2D/3D CNNs and Transformer-based architectures for video action recognition</li>
+            <li>Evaluated representation transfer learning across 14 target datasets using 6 SOTA architectures (SlowOnly, TimeSformer, SIFAR)</li>
+            <li>Established benchmarks for cross-domain transfer learning and identified optimal transfer strategies</li>
+          </ul>
+          <div class="research-tech">
+            <span class="tech-tag">PyTorch</span>
+            <span class="tech-tag">MMAction2</span>
+            <span class="tech-tag">FFmpeg</span>
+          </div>
+        </div>
+
+        <div class="research-card">
+          <div class="research-header">
+            <h3>Deep Learning-based Hidden Camera Detection using Synthetic Training Data</h3>
+            <span class="research-date">Spring 2024</span>
+          </div>
+          <ul class="research-highlights">
+            <li>Novel synthetic data generation to address real-world data scarcity in surveillance detection</li>
+            <li>Fine-tuned ResNet50 and YOLOv8 with custom augmentation strategies</li>
+          </ul>
+          <div class="research-tech">
+            <span class="tech-tag">PyTorch</span>
+            <span class="tech-tag">OpenCV</span>
+          </div>
+        </div>
+
+        <div class="research-card">
+          <div class="research-header">
+            <h3>Context Specific Quote Recommendation from Historical Text</h3>
+            <span class="research-date">Autumn 2022</span>
+          </div>
+          <p class="research-role">IIT Kharagpur</p>
+          <ul class="research-highlights">
+            <li>Context-based quote recommendation using DistilBERT, achieving 82.25% accuracy</li>
+            <li>Full fine-tuning for quote phrase learning on the Quotation POTUS dataset</li>
+          </ul>
+          <div class="research-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">PyTorch</span>
+            <span class="tech-tag">Hugging Face</span>
+          </div>
+        </div>
+
+        <div class="research-card">
+          <div class="research-header">
+            <h3>Evidence Retrieval for Fact Verification</h3>
+            <span class="research-date">Autumn 2022</span>
+          </div>
+          <p class="research-role">IIT Kharagpur</p>
+          <ul class="research-highlights">
+            <li>Classical IR methods for evidence retrieval using tf-idf and cosine similarity</li>
+          </ul>
+          <div class="research-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">NLTK</span>
+            <span class="tech-tag">Beautiful Soup</span>
+          </div>
+        </div>
+
+        <div class="research-card">
+          <div class="research-header">
+            <h3>OCR Service</h3>
+            <span class="research-date">Mar 2024</span>
+          </div>
+          <p>FastAPI web application performing OCR, NER (spaCy), and Sentiment Analysis on uploaded images with sync/async endpoints.</p>
+          <div class="research-tech">
+            <span class="tech-tag">FastAPI</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Redis</span>
+            <span class="tech-tag">Docker</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section" aria-labelledby="edu-title">
+      <h2 class="section-title" id="edu-title">Education</h2>
+      <div class="education-container">
+
+        <div class="education-card">
+          <div class="education-header">
+            <div class="education-icon"><i class="fas fa-university" aria-hidden="true"></i></div>
+            <div class="education-info">
+              <h3>Master of Technology</h3>
+              <h4>Computer Science and Engineering</h4>
+              <p class="institution">Indian Institute of Technology, Kharagpur</p>
+              <span class="year-badge">2021 – 2023</span>
+            </div>
+          </div>
+          <div class="education-content">
+            <div class="thesis-info">
+              <h5>Thesis</h5>
+              <p>A Large-scale Study of Representation Learning and the Benchmarking in Video Action Recognition</p>
+              <p><strong>Supervisor:</strong> Dr. Abir Das</p>
+            </div>
+            <div class="coursework">
+              <h5>Key Coursework</h5>
+              <div class="course-tags">
+                <span class="course-tag">Machine Learning</span>
+                <span class="course-tag">Information Retrieval</span>
+                <span class="course-tag">Artificial Intelligence</span>
+                <span class="course-tag">Complex Networks</span>
+                <span class="course-tag">Data Analytics</span>
+                <span class="course-tag">Algorithm Design</span>
+                <span class="course-tag">Scalable Data Mining</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="education-card">
+          <div class="education-header">
+            <div class="education-icon"><i class="fas fa-graduation-cap" aria-hidden="true"></i></div>
+            <div class="education-info">
+              <h3>Bachelor of Science</h3>
+              <h4>Computer Science and Engineering</h4>
+              <p class="institution">Bangladesh Army University of Science and Technology, Saidpur</p>
+              <span class="year-badge">2015 – 2019</span>
+            </div>
+          </div>
+          <div class="education-content">
+            <div class="coursework">
+              <h5>Key Coursework</h5>
+              <div class="course-tags">
+                <span class="course-tag">Object Oriented Programming</span>
+                <span class="course-tag">Data Structures</span>
+                <span class="course-tag">Algorithms</span>
+                <span class="course-tag">Database Management</span>
+                <span class="course-tag">Machine Learning</span>
+                <span class="course-tag">Digital Image Processing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Teaching -->
+    <section id="teaching" class="section" aria-labelledby="teach-title">
+      <h2 class="section-title" id="teach-title">Teaching</h2>
+      <div class="teaching-grid">
+        <div class="teaching-card">
+          <h3>Teaching Assistant</h3>
+          <p class="institution">Department of CSE, IIT Kharagpur</p>
+          <div class="courses">
+            <div class="course">
+              <h4><a href="https://cs20202sp22.github.io/" target="_blank" rel="noopener">Software Engineering</a></h4>
+              <span class="semester">Spring 2022–23</span>
+            </div>
+            <div class="course">
+              <h4><a href="https://cs21203au22.github.io/" target="_blank" rel="noopener">Algorithms-I</a></h4>
+              <span class="semester">Autumn 2022</span>
+            </div>
+          </div>
+          <p class="responsibilities">Conducted tutorials, evaluated assignments, mentored a group of 20 students during lab sessions, and supervised multiple student groups during projects.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section" aria-labelledby="exp-title">
+      <h2 class="section-title" id="exp-title">Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">Jan 2026 – Present</div>
+          <div class="timeline-content">
+            <h3>Senior Software Engineer</h3>
+            <h4>Auptimate</h4>
+            <ul>
+              <li>Developing and maintaining an e-signature platform for creating, managing, tracking and e-signing documents</li>
+              <li>Developing an AI Agent to assist customers with legal document-related processes</li>
             </ul>
+          </div>
         </div>
-    </nav>
-
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1>Md Ashik Khan</h1>
-                    <h2 class="hero-tagline">Efficient Deep Learning for Visual Understanding</h2>
-                    <p class="lead">M.Tech in Computer Science & Engineering, Indian Institute of Technology Kharagpur | Former Research Assistant, CVIR Lab</p>
-                    <p class="hero-research">Building resource-efficient deep learning systems for video action recognition and medical image analysis</p>
-                    <div class="social-links">
-                        <a href="https://scholar.google.com/citations?user=EKQLSHQAAAAJ&hl=en" target="_blank" title="Google Scholar">
-                            <i class="fas fa-graduation-cap"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/iamashik/" target="_blank" title="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://github.com/Anashikforu" target="_blank" title="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://leetcode.com/aasshhik98/" target="_blank" title="LeetCode">
-                            <i class="fas fa-code"></i>
-                        </a>
-                        <a href="mailto:aasshhik98@gmail.com" title="Email">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                        <a href="Md_Ashik_Khan_Resume.pdf" target="_blank" title="Download CV">
-                            <i class="fas fa-file-pdf"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <img src="4E30DDE8-305D-4A6A-BA34-3A89D0BEEB4C.jpg" alt="Md Ashik Khan">
-                </div>
-            </div>
+        <div class="timeline-item">
+          <div class="timeline-date">May 2023 – Dec 2025</div>
+          <div class="timeline-content">
+            <h3>Software Engineer</h3>
+            <h4>Auptimate</h4>
+            <ul>
+              <li>Developed and maintained an e-signature platform for creating, managing, tracking and e-signing documents</li>
+              <li>Developed an AI Agent to assist customers with legal document-related processes</li>
+            </ul>
+          </div>
         </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Mar 2020 – Aug 2021</div>
+          <div class="timeline-content">
+            <h3>Assistant Programmer</h3>
+            <h4>Hovata Technologies</h4>
+            <ul>
+              <li>Developed PetrolERP — comprehensive web application for petroleum industry business process automation</li>
+              <li>Led development of Hovata Parking System for real-time parking management and optimization</li>
+              <li>Built REST APIs with Lumen Micro Framework and UI components with React JS and Redux</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Sep 2019 – Feb 2020</div>
+          <div class="timeline-content">
+            <h3>Junior Software Developer</h3>
+            <h4>MerinaSoft</h4>
+            <ul>
+              <li>Developed inventory management system using Laravel</li>
+              <li>Developed Android applications and handled client requirements and UI design</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="news" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title">Recent Updates</h2>
-            <div class="updates-list">
-                <ul>
-                    <li><strong>Dec 2025:</strong> Paper "Fixed-Threshold Evaluation Reveals the Forensic-Semantic Spectrum in AI-Generated Image Detection" accepted at IEEE 28th ICCIT 2025.</li>
-                    <li><strong>Dec 2025:</strong> Paper "Fixed-Budget Parameter-Efficient Training with Frozen Encoders Improves Multimodal Chest X-Ray Classification" accepted at IEEE 28th ICCIT 2025.</li>
-                    <li><strong>Nov 2025:</strong> Served as a reviewer for International Conference on Intelligent Data Analysis and Applications (IDAA 2025).</li>
-                    <li><strong>Dec 2024:</strong> Paper "Comparative Analysis of Resource-Efficient CNN Architectures for Brain Tumor Classification" published at ICCIT 2024.</li>
-                    <li><strong>May 2023:</strong> Joined Auptimate as Software Engineer</li>
-                    <li><strong>May 2023:</strong> Completed Master of Technology in Computer Science and Engineering, IIT Kharagpur</li>
-                    <li><strong>Jun 2022:</strong> Started as Research Assistant at CVIR Lab, IIT Kharagpur</li>
-                    <li><strong>Jul 2021:</strong> Awarded ICCR Scholarship under Bangladesh Scholarship Scheme for pursuing M.Tech at IIT Kharagpur</li>
-                </ul>
-            </div>
+    <!-- Achievements -->
+    <section id="achievements" class="section" aria-labelledby="ach-title">
+      <h2 class="section-title" id="ach-title">Achievements</h2>
+      <div class="achievements-grid">
+        <div class="achievement-card">
+          <div class="achievement-icon"><i class="fas fa-trophy" aria-hidden="true"></i></div>
+          <div>
+            <h3>ICCR Scholarship for M.Tech at IIT Kharagpur</h3>
+            <p>Awarded under the Bangladesh Scholarship Scheme to pursue postgraduate studies at IIT Kharagpur (2021–2023)</p>
+          </div>
         </div>
+        <div class="achievement-card">
+          <div class="achievement-icon"><i class="fas fa-certificate" aria-hidden="true"></i></div>
+          <div>
+            <h3>NVIDIA DLI Certificate</h3>
+            <p>Fundamentals of Accelerated Data Science with RAPIDS (December 2021)</p>
+          </div>
+        </div>
+        <div class="achievement-card">
+          <div class="achievement-icon"><i class="fas fa-certificate" aria-hidden="true"></i></div>
+          <div>
+            <h3>Training for Mobile Application Developer</h3>
+            <p>Skill Development for Mobile Game & Application, ICT Division, Bangladesh (2018)</p>
+          </div>
+        </div>
+        <div class="achievement-card">
+          <div class="achievement-icon"><i class="fas fa-award" aria-hidden="true"></i></div>
+          <div>
+            <h3>Finalist — BAUST IEEE Idea Contest</h3>
+            <p>Recognized as a finalist in the BAUST-IEEE idea contest 2018</p>
+          </div>
+        </div>
+        <div class="achievement-card">
+          <div class="achievement-icon"><i class="fas fa-medal" aria-hidden="true"></i></div>
+          <div>
+            <h3>Honorable Mention — Programming Contest</h3>
+            <p>Inter-University Programming Contest, IUBAT, Dhaka (2016)</p>
+          </div>
+        </div>
+        <div class="achievement-card">
+          <div class="achievement-icon"><i class="fas fa-medal" aria-hidden="true"></i></div>
+          <div>
+            <h3>Board Talent Rank 35th</h3>
+            <p>SSC Examination, Dhaka Board (2012)</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <p class="about-intro">
-                    I am a Software Engineer at Auptimate, where I develop AI-driven systems for document processing and e-signature platforms. I completed my M.Tech. in Computer Science and Engineering from IIT Kharagpur in 2023, where I worked as a Research Assistant at the Computer Vision and Intelligence Research (CVIR) Lab.
-                </p>
-                <p>
-                    My research focuses on efficient deep learning for computer vision, particularly in video action recognition and medical imaging. During my time at IIT Kharagpur, I conducted a large-scale study on representation learning and benchmarking in video action recognition, evaluating transfer learning effectiveness across 14 datasets using state-of-the-art architectures including SlowOnly, TimeSformer, and SIFAR.
-                </p>
-                <p>
-                    I am also interested in developing resource-efficient models and robust forensic methods. My published work spans brain‑tumor classification, multimodal chest X‑ray analysis, and AI‑generated image detection.
-                </p>
-                <div class="interests">
-                    <h3>Research Interests</h3>
-                    <div class="interest-tags">
-                        <span class="tag primary-tag">Computer Vision</span>
-                        <span class="tag primary-tag">Medical Imaging</span>
-                        <span class="tag primary-tag">Multimodal Learning</span>
-                        <span class="tag">Action Recognition</span>
-                        <span class="tag">3D Scene Understanding</span>
-                        <span class="tag">Efficient ML</span>
-                    </div>
-                    <!-- <p style="margin-top:1rem;">Open to research collaborations, industry partnerships, and invited talks — <a href="#contact">get in touch</a> or <a href="Md_Ashik_Khan_Resume.pdf" target="_blank" rel="noopener noreferrer">download my CV</a>.</p> -->
-                </div>
-            </div>
+    <!-- Contact -->
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <h2 class="section-title" id="contact-title">Contact</h2>
+      <p style="font-size:14px; color:var(--muted); margin-bottom:14px;">
+        Email: <a href="mailto:aasshhik98@gmail.com">aasshhik98@gmail.com</a> · <a href="mailto:ashik.khan@kgpian.iitkgp.ac.in">ashik.khan@kgpian.iitkgp.ac.in</a><br/>
+        Profiles: <a href="https://scholar.google.com/citations?user=EKQLSHQAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a> ·
+        <a href="https://www.linkedin.com/in/iamashik/" target="_blank" rel="noopener">LinkedIn</a> ·
+        <a href="https://github.com/Anashikforu" target="_blank" rel="noopener">GitHub</a> ·
+        <a href="https://leetcode.com/aasshhik98/" target="_blank" rel="noopener">LeetCode</a>
+      </p>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+            <h3>Email</h3>
+            <p>aasshhik98@gmail.com</p>
+            <p>ashik.khan@kgpian.iitkgp.ac.in</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone" aria-hidden="true"></i>
+            <h3>Phone</h3>
+            <p>+880 1796 103496</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+            <h3>Location</h3>
+            <p>Mirzapur-1940, Tangail</p>
+            <p>Dhaka, Bangladesh</p>
+          </div>
         </div>
+      </div>
     </section>
 
-    <section id="education" class="section">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="education-container">
-                <div class="education-card">
-                    <div class="education-header">
-                        <div class="education-icon">
-                            <i class="fas fa-university"></i>
-                        </div>
-                        <div class="education-info">
-                            <h3>Master of Technology</h3>
-                            <h4>Computer Science and Engineering</h4>
-                            <p class="institution">Indian Institute of Technology, Kharagpur</p>
-                            <span class="year-badge">2021 - 2023</span>
-                        </div>
-                    </div>
-                    <div class="education-content">
-                        <div class="thesis-info">
-                            <h5>Thesis</h5>
-                            <p>A Large-scale Study of Representation Learning and the Benchmarking in Video Action Recognition</p>
-                            <p><strong>Supervisor:</strong> Dr. Abir Das</p>
-                        </div>
-                        <div class="coursework">
-                            <h5>Key Coursework</h5>
-                            <div class="course-tags">
-                                <span class="course-tag">Machine Learning</span>
-                                <span class="course-tag">Information Retrieval</span>
-                                <span class="course-tag">Artificial Intelligence</span>
-                                <span class="course-tag">Complex Networks</span>
-                                <span class="course-tag">Data Analytics</span>
-                                <span class="course-tag">Algorithm Design</span>
-                                <span class="course-tag">Scalable Data Mining</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  </main>
 
-                <div class="education-card">
-                    <div class="education-header">
-                        <div class="education-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <div class="education-info">
-                            <h3>Bachelor of Science</h3>
-                            <h4>Computer Science and Engineering</h4>
-                            <p class="institution">Bangladesh Army University of Science and Technology, Saidpur</p>
-                            <span class="year-badge">2015 - 2019</span>
-                        </div>
-                    </div>
-                    <div class="education-content">
-                        <div class="coursework">
-                            <h5>Key Coursework</h5>
-                            <div class="course-tags">
-                                <span class="course-tag">Object Oriented Programming</span>
-                                <span class="course-tag">Data Structures</span>
-                                <span class="course-tag">Algorithms</span>
-                                <span class="course-tag">Database Management System</span>
-                                <span class="course-tag">Machine Learning</span>
-                                <span class="course-tag">Data Mining</span>
-                                <span class="course-tag">Artificial Intelligence</span>
-                                <span class="course-tag">Digital Image Processing</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Md Ashik Khan</p>
+    </div>
+  </footer>
 
-    <section id="research" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title">Research Projects</h2>
-            <div class="research-grid">
-                <div class="research-card">
-                    <div class="research-header">
-                        <h3>A Large-scale Study of Representation Learning and the Benchmarking in Video Action Recognition</h3>
-                        <span class="research-date">July 2022 - April 2023</span>
-                    </div>
-                    <p class="research-role">IIT Kharagpur, Supervised By Dr. Abir Das</p>
-                    <ul class="research-highlights">
-                        <li>Performed comprehensive analysis of 2D/3D CNNs and Transformer-based architectures in video action recognition</li>
-                        <li>Evaluated representation transfer learning across 14 target datasets through 6 state-of-the-art action recognition architectures including SlowOnly, TimeSformer and SIFAR and established benchmarks for cross-domain transfer learning effectiveness</li>
-                        <li>Developed a comprehensive understanding of architecture-specific transfer learning patterns and established correlation between pretraining dataset similarity, downstream performance and identified optimal transfer learning strategies for various action datasets</li>
-                    </ul>
-                    <div class="research-tech">
-                        <span class="tech-tag">PyTorch</span>
-                        <span class="tech-tag">MMAction2</span>
-                        <span class="tech-tag">FFmpeg</span>
-                    </div>
-                </div>
-
-                <div class="research-card">
-                    <div class="research-header">
-                        <h3>Deep Learning-based Hidden Camera Detection using Synthetic Training Data</h3>
-                        <span class="research-date">Spring 2024</span>
-                    </div>
-                    <ul class="research-highlights">
-                        <li>Developed a novel synthetic data generation procedure to address real-world data collection challenges in surveillance detection</li>
-                        <li>Creating large training dataset by strategically combining background environments with varied hidden-camera placements</li>
-                        <li>Fine-tuned ResNet50 and YOLOv8 with custom augmentation strategies</li>
-                    </ul>
-                    <div class="research-tech">
-                        <span class="tech-tag">PyTorch</span>
-                        <span class="tech-tag">OpenCV</span>
-                    </div>
-                </div>
-
-                <div class="research-card">
-                    <div class="research-header">
-                        <h3>Context Specific Quote Recommendation from Historical Text</h3>
-                        <span class="research-date">Autumn 2022</span>
-                    </div>
-                    <p class="research-role">IIT Kharagpur</p>
-                    <ul class="research-highlights">
-                        <li>Developed a context-based quote recommendation system using the Hugging Face DistilBERT model</li>
-                        <li>Prepared dataset and annotations from Quotation POTUS</li>
-                        <li>Implemented transfer learning techniques like full fine-tuning for quote phrase learning and evaluation, achieving 82.25% accuracy</li>
-                    </ul>
-                    <div class="research-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">PyTorch</span>
-                        <span class="tech-tag">Hugging Face</span>
-                    </div>
-                </div>
-
-                <div class="research-card">
-                    <div class="research-header">
-                        <h3>Evidence Retrieval for Fact Verification</h3>
-                        <span class="research-date">Autumn 2022</span>
-                    </div>
-                    <p class="research-role">IIT Kharagpur</p>
-                    <ul class="research-highlights">
-                        <li>Implemented classical Information Retrieval methods to collect evidence related to a claim or fact</li>
-                        <li>Developed approach by creating collated data and measuring the related evidence using tf-idf score and cosine similarity</li>
-                    </ul>
-                    <div class="research-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">NLTK</span>
-                        <span class="tech-tag">Beautiful Soup</span>
-                    </div>
-                </div>
-
-                <div class="research-card">
-                    <div class="research-header">
-                        <h3>OCR Service</h3>
-                        <span class="research-date">Mar 2024 - Mar 2024</span>
-                    </div>
-                    <p>The OCR Service is a web application built using FastAPI that accepts base64_encoded_image, performs Optical Character Recognition (OCR) using tesseract, Named Entity Recognition (NER) using spacy, and Sentiment Analysis on the extracted text using textblob, and returns the results. The service provides both synchronous and asynchronous APIs to handle image processing.</p>
-                    <div class="research-tech">
-                        <span class="tech-tag">Optical Character Recognition (OCR)</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">FastAPI</span>
-                        <span class="tech-tag">Redis</span>
-                        <span class="tech-tag">Docker</span>
-                    </div>
-                </div>
-
-                <div class="research-card">
-                    <div class="research-header">
-                        <h3>Web Crawling and Extraction of COVID-19 News</h3>
-                        <span class="research-date">Spring 2021</span>
-                    </div>
-                    <p class="research-role">IIT Kharagpur</p>
-                    <ul class="research-highlights">
-                        <li>Developed a Lex/Yacc-based console application for query-driven COVID-19 data extraction from Worldometer and Wikipedia, covering 55 countries across 5 subcontinents with PLY and Regular Expressions for data parsing and analysis</li>
-                        <li>Detected Country-wise top closest COVID-19 responded countries according to Jaccard similarity of news and created Word Cloud</li>
-                    </ul>
-                    <div class="research-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">PLY</span>
-                        <span class="tech-tag">Regular Expression</span>
-                    </div>
-                </div>
-
-                <!-- <div class="research-card">
-                    <div class="research-header">
-                        <h3>Hovata Parking System</h3>
-                        <span class="research-date">Feb 2021 - Apr 2021</span>
-                    </div>
-                    <p class="research-role">Associated with Hovata Technologies</p>
-                    <ul class="research-highlights">
-                        <li>Developed an online & offline parking management system for managing parking space and in-and-out procedures and optimizing overall operations</li>
-                        <li>Features: real-time management and tracking of parking, vehicle in-and-out, monthly and daily parking transactions</li>
-                    </ul>
-                    <div class="research-tech">
-                        <span class="tech-tag">ReactJS</span>
-                        <span class="tech-tag">Lumen</span>
-                        <span class="tech-tag">PHP</span>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">MySQL</span>
-                        <span class="tech-tag">Amazon Web Services (AWS)</span>
-                    </div>
-                </div>
-
-                <div class="research-card">
-                    <div class="research-header">
-                        <h3>PetrolERP</h3>
-                        <span class="research-date">Mar 2020 - Feb 2021</span>
-                    </div>
-                    <p class="research-role">Associated with Hovata Technologies</p>
-                    <ul class="research-highlights">
-                        <li>Developed and implemented a comprehensive web-based application, PetrolERP, designed to streamline and automate various business processes in the petroleum industry</li>
-                        <li>Implemented a module to manage sales and stock processes, including corporate and client sale system, stock management system, stock adjustment system, and invoice generation</li>
-                        <li>Designed a system to track and manage petroleum product inventory, enabling real-time monitoring and ensuring accurate stock levels</li>
-                        <li>Incorporated a reporting and analytics tool to provide insights into business performance</li>
-                        <li>Established a secure user access control system, ensuring that only authorized personnel can access sensitive information</li>
-                    </ul>
-                    <div class="research-tech">
-                        <span class="tech-tag">React.js</span>
-                        <span class="tech-tag">Redux</span>
-                        <span class="tech-tag">MySQL</span>
-                        <span class="tech-tag">Lumen</span>
-                        <span class="tech-tag">Amazon Web Services (AWS)</span>
-                    </div>
-                </div> -->
-            </div>
-        </div>
-    </section>
-
-    <section id="publications" class="section">
-        <div class="container">
-            <h2 class="section-title">Publications</h2>
-            <p style="text-align: center; color: #666; font-size: 0.9rem; margin-bottom: 1rem;">
-                <i class="fas fa-sync-alt" style="animation: spin 2s linear infinite;"></i> Loading publications from Google Scholar...
-            </p>
-            <div class="publications-list">
-                <!-- Publications will be loaded dynamically from publications.json -->
-                <!-- Fallback: static publications below -->
-                <div class="publication">
-                    <div class="pub-number">1</div>
-                    <div class="pub-content">
-                        <h3>Comparative Analysis of Resource-Efficient CNN Architectures for Brain Tumor Classification</h3>
-                        <p class="pub-authors"><strong>Md Ashik Khan</strong>, Rafath Bin Zafar Auvee</p>
-                        <p class="pub-venue">2024 27th International Conference on Computer and Information Technology (ICCIT), Cox's Bazar, Bangladesh, pp. 639-644</p>
-                        <p class="pub-stats"><i class="fas fa-quote-right"></i> Cited by 18</p>
-                        <p class="pub-abstract">Accurate brain tumor classification in MRI images is essential for timely diagnosis and effective treatment planning. 
-                        Despite its lower complexity, our custom CNN architecture achieved 98.67% accuracy on the Br35H dataset and 99.62% on the Brain Tumor MRI Dataset, 
-                        showing competitive performance against pre-trained ResNet18 and VGG16 models.</p>
-                        <a href="https://ieeexplore.ieee.org/abstract/document/11021970" class="pub-link" target="_blank">
-                            <i class="fas fa-external-link-alt"></i> View
-                        </a>
-                    </div>
-                </div>
-                <div class="publication">
-                    <div class="pub-number">2</div>
-                    <div class="pub-content">
-                        <h3>Fixed-Threshold Evaluation of a Hybrid CNN–ViT for AI-Generated Image Detection Across Photos and Art</h3>
-                        <p class="pub-authors"><strong>Md Ashik Khan</strong>, Arafat Alam Jion</p>
-                        <p class="pub-venue">Accepted at 2025 28th International Conference on Computer and Information Technology (ICCIT), Cox's Bazar, Bangladesh</p>
-                        <p class="pub-abstract">AI image generators create both photorealistic images and stylized art, necessitating robust detectors that maintain performance under common post-processing transformations (JPEG compression, blur, downscaling). Existing methods optimise single metrics without addressing deployment-critical factors such as operating point selection and fixed-threshold robustness. This work addresses misleading robustness estimates by introducing a fixed-threshold evaluation protocol that holds decision thresholds, selected once on clean validation data, fixed across all post-processing transformations. Traditional methods retune thresholds per condition, artificially inflating robustness estimates and masking deployment failures.</p>
-                        <a href="#" class="pub-link" target="_blank"><i class="fas fa-external-link-alt"></i> View</a>
-                    </div>
-                </div>
-                <div class="publication">
-                    <div class="pub-number">3</div>
-                    <div class="pub-content">
-                        <h3>Fixed-Budget Parameter-Efficient Training with Frozen Encoders Improves Multimodal Chest X-Ray Classification</h3>
-                        <p class="pub-authors"><strong>Md Ashik Khan</strong>, Md Nahid Siddique</p>
-                        <p class="pub-venue">Accepted at 2025 28th International Conference on Computer and Information Technology (ICCIT), Cox's Bazar, Bangladesh</p>
-                        <p class="pub-abstract">Multimodal chest X-Ray analysis often fine-tunes large vision-language models, which is computationally costly. We study parameter-efficient training (PET) strategies, including frozen encoders, BitFit, LoRA, and adapters for multi-label classification on the Indiana University Chest X-Ray dataset (3,851 image-report pairs; 579 test samples). To mitigate data leakage, we redact pathology terms from reports used as text inputs while retaining clinical context. Under a fixed parameter budget (2.37M parameters, 2.51% of total), all PET variants achieve AUROC between 0.892 and 0.908, outperforming full fine-tuning (0.770 AUROC), which uses 94.3M trainable parameters, a 40× reduction.</p>
-                        <a href="#" class="pub-link" target="_blank"><i class="fas fa-external-link-alt"></i> View</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="teaching" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title">Teaching Experience</h2>
-            <div class="teaching-grid">
-                <div class="teaching-card">
-                    <h3>Teaching Assistant</h3>
-                    <p class="institution">Department of CSE, IIT Kharagpur</p>
-                    <div class="courses">
-                        <div class="course">
-                            <h4><a href="https://cs20202sp22.github.io/" target="_blank">Software Engineering</a></h4>
-                            <span class="semester">Spring 2022-23</span>
-                        </div>
-                        <div class="course">
-                            <h4><a href="https://cs21203au22.github.io/" target="_blank">Algorithms-I</a></h4>
-                            <span class="semester">Autumn 2022</span>
-                        </div>
-                    </div>
-                    <p class="responsibilities">Conducted tutorials, evaluated assignments, mentored a group of 20 students during lab sessions, 
-                    and supervised multiple student groups during their projects.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="experience" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title">Work Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-date">May 2023 - Present</div>
-                    <div class="timeline-content">
-                        <h3>Software Engineer</h3>
-                        <h4>Auptimate</h4>
-                        <ul>
-                            <li>Developing and maintaining an e-signature platform for creating, managing, tracking and e-signing documents</li>
-                            <li>Developing an AI Agent to assist customers regarding legal document-related processes</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">March 2020 - August 2021</div>
-                    <div class="timeline-content">
-                        <h3>Assistant Programmer</h3>
-                        <h4>Hovata Technologies</h4>
-                        <ul>
-                            <li>Developed PetrolERP - comprehensive web application for petroleum industry business process automation</li>
-                            <li>Implemented sales and stock management modules including corporate/client sales, inventory tracking, and invoice generation</li>
-                            <li>Led development of Hovata Parking System for real-time parking management and optimization</li>
-                            <li>Built REST APIs with Lumen Micro Framework and UI components with React JS and Redux</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">Sep 2019 - Feb 2020</div>
-                    <div class="timeline-content">
-                        <h3>Junior Software Developer</h3>
-                        <h4>MerinaSoft</h4>
-                        <ul>
-                            <li>Developed inventory management project based on Laravel</li>
-                            <li>Developed several Android applications for customer requirements</li>
-                            <li>Worked on project management, client requirement analysis, and UI design activities</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="achievements" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title">Achievements & Certifications</h2>
-            <div class="achievements-grid">
-                <div class="achievement-card">
-                    <div class="achievement-icon">
-                        <i class="fas fa-trophy"></i>
-                    </div>
-                    <h3>ICCR Scholarship for M.Tech at IIT Kharagpur</h3>
-                    <p>Awarded under the Bangladesh Scholarship Scheme to pursue postgraduate studies at IIT Kharagpur (2021-2023)</p>
-                </div>
-                <div class="achievement-card">
-                    <div class="achievement-icon">
-                        <i class="fas fa-certificate"></i>
-                    </div>
-                    <h3>NVIDIA DLI Certificate</h3>
-                    <p>Fundamentals of Accelerated Data Science with RAPIDS (December 2021)</p>
-                </div>
-                <div class="achievement-card">
-                    <div class="achievement-icon">
-                        <i class="fas fa-certificate"></i>
-                    </div>
-                    <h3>Training For Mobile Application Developer</h3>
-                    <p>Skill Development for Mobile Game & Application, ICT Division, Bangladesh (2018)</p>
-                </div>
-                
-                <div class="achievement-card">
-                    <div class="achievement-icon">
-                        <i class="fas fa-award"></i>
-                    </div>
-                    <h3>Finalist - BAUST IEEE Idea Contest</h3>
-                    <p>Recognized as a finalist in the BAUST-IEEE idea contest 2018</p>
-                </div>
-                <div class="achievement-card">
-                    <div class="achievement-icon">
-                        <i class="fas fa-medal"></i>
-                    </div>
-                    <h3>Honorable Mention - Programming Contest</h3>
-                    <p>Inter-University Programming Contest, IUBAT, Dhaka (2016)</p>
-                </div>
-                <div class="achievement-card">
-                    <div class="achievement-icon">
-                        <i class="fas fa-medal"></i>
-                    </div>
-                    <h3>Board Talent Rank 35th</h3>
-                    <p>Secured Board Talent Rank 35th in Secondary School Certificate (SSC) Examination, Dhaka Board, 2012</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="section">
-        <div class="container">
-            <h2 class="section-title">Contact</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <h3>Email</h3>
-                        <p>aasshhik98@gmail.com</p>
-                        <p>ashik.khan@kgpian.iitkgp.ac.in</p>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <h3>Phone</h3>
-                        <p>+8801796103496</p>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <h3>Location</h3>
-                        <p>Mirzapur-1940, Tangail</p>
-                        <p>Dhaka, Bangladesh</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Md Ashik Khan. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

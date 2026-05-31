@@ -1,0 +1,11 @@
+# LaTeX CV folder
+academic_cv/
+
+# Internal docs / guides
+*.md
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
