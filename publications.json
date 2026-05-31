@@ -7,7 +7,7 @@
       "authors": "Md Ashik Khan and Rafath Bin Zafar Auvee",
       "venue": "2024 27th International Conference on Computer and Information Technology (ICCIT), Cox's Bazar, Bangladesh",
       "year": "2024",
-      "citations": 21,
+      "citations": 31,
       "abstract": "Accurate brain tumor classification in MRI images is essential for timely diagnosis and effective treatment planning. While deep learning models such as ResNet18 and VGG16 have demonstrated high accuracy, they often come with increased complexity and computational demands. This study presents a comparative analysis of a simple yet effective Convolutional Neural Network (CNN) architecture against pre-trained ResNet18 and VGG16 models for brain tumor classification using two publicly available datasets: Br35H:: Brain Tumor Detection 2020 and Brain Tumor MRI Dataset. Despite its lower complexity, the custom CNN architecture shows competitive performance compared to the pre-trained models. In binary classification tasks, the custom CNN achieved an accuracy of 98.67% on the Br35H dataset and 99.62% on the Brain Tumor MRI Dataset. For multi-class classification, the custom CNN, with slight …",
       "scholar_url": "",
       "pub_url": "https://ieeexplore.ieee.org/abstract/document/11021970/"

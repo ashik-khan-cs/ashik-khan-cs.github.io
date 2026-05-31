@@ -108,54 +108,6 @@
     });
   });
 
-  /* ── Load publications from JSON ── */
-  async function loadPublications() {
-    try {
-      const res = await fetch(`publications.json?v=${Date.now()}`);
-      if (!res.ok) throw new Error('failed');
-      const data = await res.json();
-      renderPublications(data);
-    } catch {
-      /* fall back to static HTML publications */
-    }
-  }
-
-  function renderPublications(data) {
-    const list = document.querySelector('.publications-list');
-    if (!list) return;
-    list.innerHTML = '';
-    data.publications.forEach(pub => {
-      const article = document.createElement('article');
-      article.className = 'publication reveal';
-      article.innerHTML = `
-        <div class="pub-thumb-wrap">
-          <div class="pub-thumb-placeholder">${pub.title.slice(0, 40)}…</div>
-        </div>
-        <div class="pub-content">
-          <h3>${pub.title}</h3>
-          <p class="pub-authors">${pub.authors}</p>
-          ${pub.venue ? `<p class="pub-venue">${pub.venue}</p>` : ''}
-          ${pub.citations > 0 ? `<p class="pub-stats"><i class="fas fa-quote-right" aria-hidden="true"></i> Cited by ${pub.citations}</p>` : ''}
-          ${pub.abstract ? `<p class="pub-abstract">${pub.abstract.slice(0, 500)}${pub.abstract.length > 500 ? '…' : ''}</p>` : ''}
-          <div class="pub-links">
-            ${pub.pub_url ? `<a class="pub-link" href="${pub.pub_url}" target="_blank" rel="noopener">Paper</a>` : ''}
-            ${pub.scholar_url ? `<a class="pub-link" href="${pub.scholar_url}" target="_blank" rel="noopener">Scholar</a>` : ''}
-          </div>
-        </div>`;
-      list.appendChild(article);
-    });
-
-    if (!prefersReduced && 'IntersectionObserver' in window) {
-      const io2 = new IntersectionObserver((entries) => {
-        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-visible'); io2.unobserve(e.target); } });
-      }, { threshold: 0.08 });
-      list.querySelectorAll('.publication').forEach(el => io2.observe(el));
-    } else {
-      list.querySelectorAll('.publication').forEach(el => el.classList.add('is-visible'));
-    }
-  }
-
-  window.addEventListener('load', loadPublications);
 
   /* ── Alt+1-7 keyboard shortcuts ── */
   const ids = ['about', 'news', 'publications', 'research', 'education', 'experience', 'contact'];
