@@ -143,7 +143,7 @@ h1.typing::after {
 .hero-image img {
   width: min(45vw, 200px);
   aspect-ratio: 1 / 1; height: auto;
-  object-fit: cover; object-position: center 20%;
+  object-fit: cover; object-position: center 70%;
   border-radius: 9999px;
   border: 1px solid var(--border);
   box-shadow: 0 0 0 3px var(--bg), 0 0 0 5px color-mix(in srgb, var(--accent) 20%, transparent), 0 12px 28px rgba(0,0,0,.08);
@@ -370,7 +370,8 @@ h1.typing::after {
 }
 .publication:hover .pub-thumb-wrap { transform: scale(1.02); }
 .pub-thumb-wrap img {
-  width: 100%; height: 100%; object-fit: cover; display: block;
+  width: 100%; height: 100%; object-fit: contain; display: block;
+  background: #fff; padding: 4px;
 }
 .pub-thumb-placeholder {
   width: 100%; height: 100%;

@@ -4,6 +4,10 @@ academic_cv/
 # Internal docs / guides
 *.md
 
+# Source PDFs for methodology figures (converted to PNG)
+cnn_vit_methodology.pdf
+fix_pert_methodology.pdf
+
 # macOS
 .DS_Store
 
